@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Hard Reload and Clear Data",
+  "version": "0.1",
+  "description": "A button to hard reload and clear all site data.",
+  "permissions": ["activeTab", "browsingData", "tabs", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "clear-data-and-reload": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      },
+      "description": "Clear data and reload the active tab"
+    }
+  }
+}
